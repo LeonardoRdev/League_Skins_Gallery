@@ -10,12 +10,16 @@ header{
     display: flex;
 }
 
+header h1{
+    transition: 0.25s;
+}
 
 header h1:hover{
     cursor: pointer;
     text-decoration: underline;
     color: rgb(233, 164, 36);
-    transition: 0.2s;
+    transform: scale(1.025);
+    transition: 0.25s;
 }
 
 main{
@@ -32,15 +36,17 @@ main{
 div#caixaPequena img{
     width: 90%;
     height: 25%;
-    margin: 5px 0px;
+    margin: 7px 0px;
     box-shadow: 2px 5px 6px 2px;
     border-radius: 25px;
     background-color: gray;
+    transition: 0.25s;
 }
 
 div#caixaPequena img:hover{
     cursor: pointer;
     transform: scale(1.05);
+    transition: 0.25s;
 }
 
 div#caixaGrande img{
@@ -48,15 +54,15 @@ div#caixaGrande img{
     height: 95%;
     box-shadow: 5px 10px 30px 2px rgba(0,0,0,0.8); /*Direita, Baixo, blur, extensão e rgba(preto, 80% opacidade)*/
     border-radius: 38px;
-    background: linear-gradient(160deg, rgb(236, 142, 33),rgb(156, 133, 133))
+    background: linear-gradient(160deg, rgb(236, 142, 33),rgb(97, 93, 93)) /*Degradê de plano de fundo de 160° graus*/
 }
 
 div#caixaPequena{
     display: flex; /*Ativa as propriedades flex-box */
     flex-direction: column; /*Coloca as imagens do div#caixaPequena uma em baixo da outra */
     flex: 18%; /*Quando se utiliza display: flex; em vez de se utilizar width: se utiliza flex:
-    Normalmente acontece quando se tem um container dentro outro que possui a propriedade display:flex*/
-    /*exemplo: div#caixaPequena tá dentro de main no qual main é display:flex*/
+    Normalmente acontece quando se tem um container dentro de outro que possui a propriedade display:flex*/
+    /*exemplo: div#caixaPequena tá dentro do main do qual o main é display:flex;*/
     padding: 15px;
 }
 
